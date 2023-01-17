@@ -31,9 +31,9 @@ public class Ex2_Consoantes {
 
         } while(count < consoantes.length);
 
-        for ( String consoante :consoantes) {
+        for ( String consoante : consoantes) {
             if (consoante != null)
-            System.out.print(consoante + " ");
+                System.out.print(consoante + " ");
         }
 
         System.out.println("quantidade de consoantes: " + quantidadeConsoantes);
