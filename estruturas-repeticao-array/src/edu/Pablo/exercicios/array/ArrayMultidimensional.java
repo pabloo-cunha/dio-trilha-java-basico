@@ -22,6 +22,8 @@ public class ArrayMultidimensional {
                 System.out.println(coluna);
             }
 
+        System.out.println();
+
         }
     }
 }
