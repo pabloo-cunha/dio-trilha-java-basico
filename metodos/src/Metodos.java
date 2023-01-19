@@ -8,15 +8,9 @@ public class Metodos {
         int num1 = sc.nextInt();
         int num2 = sc.nextInt();
 
-        System.out.println(somarNumeros(num1, num2));
+        System.out.println();
 
     }
 
-    public static int somarNumeros(int num1, int num2){
 
-        System.out.println("Quais numeros deseja somar?");
-        return num1 + num2;
-
-
-    }
 }
