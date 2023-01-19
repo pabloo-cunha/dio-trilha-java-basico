@@ -3,11 +3,11 @@ public class Main {
     public static void main(String[] args) {
 
         //Calculadora
-        ExCalculadora calc = new ExCalculadora();
+        Calculadora calc = new Calculadora();
         System.out.println("exercicio calculadora: ");
 
         System.out.println("Resultado da soma: " + calc.soma(3,5));
-        System.out.println("Resultado da subtração: " + calc.subtracao(6,3));
+        System.out.prntln("Resultado da subtração: " + calc.subtracao(6,3));
         System.out.println("Resultado da multiplicacao: " + calc.multiplicacao(3,5));
         System.out.println("Resultado da divisao: " + calc.divisao(3,2.5));
 
