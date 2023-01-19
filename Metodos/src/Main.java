@@ -7,7 +7,7 @@ public class Main {
         System.out.println("exercicio calculadora: ");
 
         System.out.println("Resultado da soma: " + calc.soma(3,5));
-        System.out.prntln("Resultado da subtração: " + calc.subtracao(6,3));
+        System.out.println("Resultado da subtração: " + calc.subtracao(6,3));
         System.out.println("Resultado da multiplicacao: " + calc.multiplicacao(3,5));
         System.out.println("Resultado da divisao: " + calc.divisao(3,2.5));
 
