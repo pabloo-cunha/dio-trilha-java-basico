@@ -17,15 +17,31 @@ public class Program {
         Locale.setDefault(Locale.US);
         Scanner scan = new Scanner(System.in);
 
-        Temperaturas graus = new Temperaturas();
-        List<Integer> temperaturas = new ArrayList<>();
+        Temperaturas temp = new Temperaturas();
+        List<Integer> graus = new ArrayList<>();
 
+        while (graus.size() < 6) {
 
-        while (temperaturas.size() < 6){
-            temperaturas.add(scan.nextInt());
+            System.out.print("Temperatura: ");
+            graus.add(scan.nextInt());
         }
 
-        System.out.println();
+        int somar = 0;
+        for (int i = 0; i < graus.size(); i++) {
+
+            somar += graus.get(i);
+            temp.grausCelcius = somar;
+        }
+
+        System.out.println("media: " + temp.calcularMediaSemestral());
+        for (int i = 0; i < graus.size(); i++) {
+
+            if (graus.get(i) > temp.calcularMediaSemestral()) {
+
+                System.out.println("Mês: " + temp.mes.get(i) + ", Temperatura: " + graus.get(i));
+            }
+        }
+
 
 
     }

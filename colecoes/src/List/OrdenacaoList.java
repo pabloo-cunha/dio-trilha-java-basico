@@ -1,10 +1,10 @@
-/*Dadas as seguintes informações sobre meus gatos, crie uma lista
+package List;/*Dadas as seguintes informações sobre meus gatos, crie uma lista
 e ordene esta lista exibindo:
         (nome - idade - cor)
 
-Gato 1 - nome: Jon, idade: 18, cor: preto
-Gato 2 - nome: Simba, idade: 6, cor: tigrado
-Gato 2 - nome: Jon, idade: 12, cor: amarelo
+List.Gato 1 - nome: Jon, idade: 18, cor: preto
+List.Gato 2 - nome: Simba, idade: 6, cor: tigrado
+List.Gato 2 - nome: Jon, idade: 12, cor: amarelo
  */
 
 import java.util.ArrayList;
@@ -36,18 +36,18 @@ public class OrdenacaoList {
 
 
         System.out.println("--\tOrdem Idade\t--");
-//        Collections.sort(meusGatos, new ComparatorIdade());
+//        Collections.sort(meusGatos, new List.ComparatorIdade());
         meusGatos.sort(new ComparatorIdade());
         System.out.println(meusGatos);
 
         System.out.println("--\tOrdem cor\t--");
-//        Collections.sort(meusGatos, new ComparatorCor());
+//        Collections.sort(meusGatos, new List.ComparatorCor());
         meusGatos.sort(new ComparatorCor());
         System.out.println(meusGatos);
 
 
         System.out.println("--\tOrdem Nome/Cord/Idade\t--");
-//        Collections.sort(meusGatos, new ComparatorNomeCorIdade());
+//        Collections.sort(meusGatos, new List.ComparatorNomeCorIdade());
         meusGatos.sort(new ComparatorNomeCorIdade());
         System.out.println(meusGatos);
 
